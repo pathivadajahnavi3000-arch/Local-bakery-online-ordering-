@@ -1,0 +1,6 @@
+{
+  "name": "Maison Dorée Artisan Bakery",
+  "description": "Artisanal neighborhood bakery offering stoneground wild sourdough, delicate viennoiserie, daily hot-oven specials, baking masterclasses, and online pickup ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
