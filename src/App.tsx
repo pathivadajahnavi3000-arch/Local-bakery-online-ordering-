@@ -26,6 +26,7 @@ import { CartDrawer } from './components/CartDrawer';
 import { ProductCustomizationModal } from './components/ProductCustomizationModal';
 import { OrderConfirmationModal } from './components/OrderConfirmationModal';
 import { MobileQuickCart } from './components/MobileQuickCart';
+import { MaisonChatbot } from './components/MaisonChatbot';
 
 export default function App() {
   // Cart state persisted in localStorage and synced with current prices
@@ -273,6 +274,14 @@ export default function App() {
       <OrderConfirmationModal
         order={completedOrder}
         onClose={() => setCompletedOrder(null)}
+      />
+
+      {/* Connected n8n AI Artisan Bakery Concierge Chatbot */}
+      <MaisonChatbot
+        menuItems={BAKERY_MENU}
+        onAddToCart={handleAddToCart}
+        onApplyPromoCode={handleApplyPromoCode}
+        appliedPromoCode={appliedPromoCode}
       />
 
     </div>

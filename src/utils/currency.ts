@@ -11,3 +11,6 @@ export const formatINR = (amount: number): string => {
     minimumFractionDigits: amount % 1 === 0 ? 0 : 2,
   })}`;
 };
+
+export const formatRupee = formatINR;
+
